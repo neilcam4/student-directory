@@ -38,7 +38,27 @@ end
 def print_footer(students)
   puts "Overall we have #{students.count} great students"
 end
-students = input_students
-print_header
-print_names(students)
-print_footer(students)
+
+def interactive_menu
+  students = []
+  loop do
+    puts "1. Input the students"
+    puts "2. SHow the students"
+    puts "9. Exit"
+
+    selection = gets.chomp
+    case selection
+    when "1"
+      students = input_students
+    when "2"
+      print_header
+      print_names(students)
+      print_footer(students)
+    when "9"
+      exit
+    else puts "I dont kniow what you mean please try again"
+    end
+  end
+end
+
+interactive_menu
