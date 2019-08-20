@@ -6,3 +6,5 @@ The student directory allows you to manage the list of students enrolled at vill
 ``` shell
 ruby directory.rb
 ```
+ # fizzbuzz
+# skills_workshops
